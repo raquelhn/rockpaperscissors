@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: arial;
+}
+
+body{
+    background-color: white;
+    font-family: 'Nunito', sans-serif;;
+}
+header{
+    background:#BD3737;
+    padding:20px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+header > h1{
+    color:white;
+    text-align:center;
+    
+}
+
+.score-board{
+    margin: 20px auto;
+    border:3px solid #6d6d6d;
+    border-radius: 5px;
+    width: 300px;
+    color: #000054;
+    font-size: 35px;
+    text-align: center;
+    padding:15px 20px;
+    position: relative;
+}
+
+.badge{
+    background: #CC0000;
+    font-size: 14px;
+    padding:2px 4px;
+    color:white;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: 400;
+    
+}
+    
+#user-label{
+    position: absolute;
+    top:25px;
+    left:-20px ;
+}
+
+#computer-label{
+    position: absolute;
+    top:25px;
+    right:-20px ;
+}
+
+.result{
+    color:#000054;
+    font-size: 40px;
+    text-align:center;
+    font-weight: 600;
+}
+
+.choices{
+    margin: 50px 0px;
+    text-align: center;
+}
+.choice{
+    border: 4px solid #2F0854;
+    border-radius: 50%;
+    padding:30px;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.choice:hover{
+    cursor: pointer;
+}
+
+#action-message{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000054;
+}
+
+.orange-glow{
+    border: 3px solid #ffc04c ;
+    box-shadow: 0 0 10px #cc8400;
+}
+
+.red-glow{
+    border: 3px solid #ff0000 ;
+    box-shadow: 0 0 10px #7f0000;
+}
+
+.grey-glow{
+    border: 3px solid #bbbbbb ;
+    box-shadow: 0 0 10px #595959;
+}
+
+
+@media (max-width: 800px){
+    header{
+        font-size: 20px;
+    }
+    .choices{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 30px;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .choice{
+        margin-bottom: 5px;
+        width: 50%;
+    }
+
+    .choice img{
+        width: 100%;
+    }
+
+    .result{
+        font-size: 28px;
+        padding-left: 5%;
+        padding-right: 5%;
+       
+        font-weight: 400;
+    }
+
+    .score-board{
+        
+        width: 50%;
+        
+        font-size: 30px;
+        
+    }
+
+    #action-message{
+        padding-bottom: 5%;
+        transition: transform .2s;
+    }
+
+    #action-message:hover{
+        transform: scale(1.5);
+    }
+    
+}

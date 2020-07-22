@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+       <h1> Piedra - Papel - Tijera</h1>
+    </header>
+
+    <div class="score-board">
+    <div id="user-label" class="badge">user</div>
+    <div id="computer-label"class="badge">comp</div>
+    <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result"> 
+        <p></p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="./img/piedra.jpeg" alt="rock">
+        </div>
+
+        <div class="choice" id="p">
+            <img src="./img/papel.jpeg" alt="paper">
+        </div>
+
+        <div class="choice" id="s">
+            <img src="./img/tijera.jpeg" alt="Scissors">
+        </div>
+    </div>
+
+    <p id="action-message">Elige tu jugada!</p>
+
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
